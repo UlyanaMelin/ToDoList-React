@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+::-webkit-input-placeholder { color: #ffffff; } ::-moz-placeholder { color: #ffffff; } /* Firefox 19+ */ :-moz-placeholder { color: #ffffff; } /* Firefox 18- */ :-ms-input-placeholder { color: #ffffff; }
+
+:root {
+  --container-height: 600px;
+  --contaier-width: 400px;
+  --header-height: 150px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', monospace;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bc7ff5;
+}
+
+.app_wrapper {
+  background-color: white;
+  width: 900px;
+  height: var(--container-height);
+  position: relative;
+  overflow: hidden;
+}
+
+
+

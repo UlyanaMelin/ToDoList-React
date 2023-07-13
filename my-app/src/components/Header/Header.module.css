@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+::-webkit-input-placeholder { color: #ffffff; } ::-moz-placeholder { color: #ffffff; } /* Firefox 19+ */ :-moz-placeholder { color: #ffffff; } /* Firefox 18- */ :-ms-input-placeholder { color: #ffffff; }
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+:root {
+  --container-height: 600px;
+  --contaier-width: 400px;
+  --header-height: 150px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', monospace;
+}
+
+.header {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #ffc106;
+  flex-direction: column;
+}
+
+.delete_todos{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  background-color: #ffc106;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.delete_all_todos{
+  text-decoration: none;
+  display: inline-block;
+  width: 158px;
+  height: 32px;
+  border-radius: 45px;
+  margin: 7px 12px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(0 0 0);
+  background: white;
+  box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
+  transition: .2s;
+}
+
+.delete_done_todos{
+  text-decoration: none;
+  display: inline-block;
+  width: 158px;
+  height: 32px;
+  border-radius: 45px;
+  margin: 7px 12px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(0 0 0);
+  background: white;
+  box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
+  transition: .2s;
+}
+
+.delete_all_todos:hover{
+  background: #bc7ff5;
+  box-shadow: 0 15px 20px rgba(131, 46, 229, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+.delete_done_todos:hover{
+  background: #bc7ff5;
+  box-shadow: 0 15px 20px rgba(131, 46, 229, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+.new_todo {
+  width: 100%;
+  height: 50px;
+  padding: 0.25rem 0;
+  background-color: #ffc107;
+}
+
+.todoform  {
+  display: flex;
+  align-items: center;
+}
+
+.form_input {
+  flex: 1;
+  height: 40px;
+  width: 95%;
+  background-color:  #ffc107;
+  color: white;
+  border: none;
+  border-right: 0px;
+  outline: transparent;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.add_button {
+  width: 60px;
+  height: 40px;
+  font-size: 23px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-left: 0px;
+  cursor: pointer;
+}
+
+.add_button:hover {
+  text-shadow: 1px 1px 20px rgba(70, 67, 67, 0.8);
+}
